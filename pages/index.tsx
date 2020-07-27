@@ -1,15 +1,25 @@
+import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
+import utilStyles from '../styles/utils.module.css'
+// import { getSortedPostsData } from '../lib/posts'
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-)
+export default function Home() {
+  return (
+    <Layout home>
+      <Head>
+        <title>Automarket</title>
+      </Head>
+      Home page
+    </Layout>
+  )
+}
 
-export default IndexPage
+export async function getStaticProps() {
+  const allPostsData = []
+  return {
+    props: {
+      allPostsData
+    }
+  }
+}
