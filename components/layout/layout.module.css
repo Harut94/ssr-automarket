@@ -11,10 +11,25 @@
 }
 
 .navbar {
-  background-color: aqua;
-  height: 40px;
+  background-color: #fff;
+  height: 55px;
+  box-shadow: 0 2px 20px 0 rgba(0,19,26,.1);
   width: 100%;
 }
+
+.navbar :hover {
+  padding-left: 40px;
+  font-size: 28px;
+  color: #65b82e;
+  text-decoration: none;
+}
+
+.navLink{
+  padding-left: 40px;
+  font-size: 28px;
+  color: #000
+}
+
 
 .headerImage {
   width: 6rem;

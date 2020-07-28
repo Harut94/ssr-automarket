@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import Link from 'next/link'
 import { LayoutInterface } from 'interfaces/layout-interface'
+import NavLink from '../nav-link'
 
 
 
@@ -9,16 +10,8 @@ export default function Layout({ children }: LayoutInterface) {
   return (
     <div>
       <div className={styles.navbar}>
-            <Link href="/">
-              <a>
-                home
-              </a>
-            </Link>
-              <Link href="/cars-list">
-              <a>
-                cars
-              </a>
-              </Link>
+            <NavLink href='/' className={styles.navLink} text={'home'}/>
+            <NavLink href="/cars-list" className={styles.navLink} text={'cars'}/>
       </div>
       <main>{children}</main>
       </div>
