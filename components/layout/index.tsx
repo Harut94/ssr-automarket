@@ -1,7 +1,5 @@
-import Head from 'next/head'
 import styles from './layout.module.css'
-import Link from 'next/link'
-import { LayoutInterface } from 'interfaces/layout-interface'
+import { LayoutInterface } from '../../interfaces/layout-interface'
 import NavLink from '../nav-link'
 
 

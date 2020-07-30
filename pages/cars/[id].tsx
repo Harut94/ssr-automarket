@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Layout from '../../components/layout'
 import { useRouter } from 'next/router'
-import fetch from 'isomorphic-fetch'
 import { CarsInnerInterface } from '../../interfaces/cars-inner-interface'
 //services
 import { getCarsIds, getCar } from '../../services/cars-services'
@@ -52,7 +51,7 @@ export default function Posts({ car, ids }: CarsInnerInterface) {
 export async function getStaticPaths() {
   const ids = await getCarsIds()
 
-  const paths = ids.map(id => {
+  const paths = ids.map((id:number) => {
     return {
       params: {
         id: id.toString()

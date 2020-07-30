@@ -1,0 +1,25 @@
+.carTitle {
+    margin: auto;
+    width: 50%;
+    border: solid rgba(38,38,38,.1);
+    border-width: 1px 1px 0;
+    padding: 10px;
+}
+
+.carInfo {
+    margin: 10px;
+    display: flex;
+    border: solid rgba(38,38,38,.1);
+    border-width: 1px 1px 0;
+    height: 261px;
+    color: black;   
+    margin: auto;
+    width: 50%;
+}
+
+.carWrapper :hover {
+    text-decoration: none !important;
+    color: black
+}
+
+

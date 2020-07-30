@@ -1,10 +1,12 @@
 export interface CarListInterface {
-    cars: {}
+    cars: MapedCarsInterface
 }
 
 export interface MapedCarsInterface {
-    make: string
-    id: number
-    model: string
-    productionDate: number
+    id: number;
+    make: string;
+    model: string;
+    productionDate: number;
+    mainImage: string;
+    map: any
 }
